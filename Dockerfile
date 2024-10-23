@@ -54,8 +54,8 @@ RUN mkdir -p /tmp/ && \
     unzip -o /tmp/chromedriver.zip chromedriver -d /usr/bin/ && \
     rm /tmp/chromedriver.zip
 
-ENV CHROME_DRIVER /usr/bin/chromedriver
-ENV CHROME_BIN /usr/bin/google-chrome-stable
+ENV CHROME_DRIVER=/usr/bin/chromedriver
+ENV CHROME_BIN=/usr/bin/google-chrome-stable
 
 COPY . .
 COPY requirements.txt .
